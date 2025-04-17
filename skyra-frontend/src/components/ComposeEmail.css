@@ -1,0 +1,52 @@
+.compose-email {
+    min-height: 100vh;
+    background-color: transparent;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compose-email-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  line-height: 100px;
+}
+
+.email-preview {
+  width: 75%;
+  height: 50vh;
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.send-email-button {
+    padding: 12px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #34D399 0%, #3B82F6 50%, #2563EB 100%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 15%;
+  
+  }
+  
+  .send-email-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }

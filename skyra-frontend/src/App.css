@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+#root {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #204C3E 0%, #243C7A 50%, #12182C 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100vw;
+  gap: 24px;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #34D399 0%, #3B82F6 50%, #2563EB 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotate 10s linear infinite;
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.3);
+}
+
+.logo-inner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #204C3E 0%, #243C7A 50%, #12182C 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #9CA3AF;
+  margin: 0;
+  font-weight: 500;
+}
+
+.url-input {
+  width: 80%;
+  max-width: 600px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 2px solid rgba(156, 163, 175, 0.3);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(17, 24, 39, 0.5);
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.url-input::placeholder {
+  color: #9CA3AF;
+}
+
+.url-input:focus {
+  outline: none;
+  border-color: #34D399;
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.2);
+}
+
+.analyze-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #34D399 0%, #3B82F6 50%, #2563EB 100%);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.analyze-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
